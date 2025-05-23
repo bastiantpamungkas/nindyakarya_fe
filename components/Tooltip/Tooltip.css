@@ -1,0 +1,26 @@
+  .tooltip-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip {
+    visibility: visible;
+    position: absolute;
+    bottom: -80%;
+    /* Position the tooltip above the text */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1;
+
+    /* Optional: Add transition for fade-in effect */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .tooltip-container:hover .tooltip {
+    opacity: 1;
+  }

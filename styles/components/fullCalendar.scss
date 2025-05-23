@@ -1,0 +1,51 @@
+$primary_color: #0d6efd;
+
+.fc {
+  .fc-toolbar-title {
+    font-weight: 600;
+    @media only screen and (max-width: $breakpoint-sm) {
+      font-size: 1rem;
+    }
+  }
+  .fc-button {
+    background-color: white;
+    color: $primary_color;
+    font-weight: 700;
+    border: none;
+  }
+  .fc-button-primary:disabled {
+    background-color: white;
+    color: $primary_color;
+    border-color: white;
+  }
+  .fc-header-toolbar.fc-toolbar {
+    background-color: $primary_color;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+  }
+  .fc-view-harness {
+    background-color: lavender;
+    border-radius: 20px;
+  }
+  .fc-scrollgrid-liquid {
+    border-radius: 20px;
+  }
+  .fc-col-header-cell-cushion,
+  .fc-daygrid-day-number {
+    text-decoration: none;
+  }
+}
+
+.fc-day-sat,
+.fc-day-sun {
+  // background-color: #e13f3f !important;
+  // color: #e13f3f;
+}
+.fc-h-event{
+  border: none;
+  .fc-event-title-container {
+    padding: 10px;
+    font-weight: 600;
+  }
+}

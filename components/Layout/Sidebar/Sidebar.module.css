@@ -1,0 +1,305 @@
+.sidebar {
+  background-color: #faf9fc;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  transition: all 0.2s ease;
+  width: 283px;
+  z-index: 1000;
+  bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 0px 10px 0px #D1DBFE;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none !important;
+}
+
+.sidebar:hover {
+  width: 283px !important;
+}
+
+.sidebar:hover > .sectionCard {
+  display: block !important;
+}
+
+.sidebar:hover > .sidebarLogo .logoXl {
+  display: block !important;
+}
+
+.sidebar:hover > .sidebarLogo .logoSmall {
+  display: none !important;
+}
+
+.sidebar:hover .navItem .navLink .titleSidebar {
+  display: block !important;
+}
+
+.sidebar:hover .navItem.activeNavItem .navLink::after {
+  left: -11%;
+}
+
+.sidebarActive {
+  width: 96px !important;
+}
+
+.sidebarActive > .sectionCard {
+  display: none !important;
+}
+
+.sidebarActive > .sidebarLogo .logoXl {
+  display: none !important;
+}
+
+.sidebarActive > .sidebarLogo .logoSmall {
+  display: block !important;
+}
+
+.sidebarActive .navItem .navLink .titleSidebar {
+  display: none !important;
+}
+
+.sidebar.sidebarActive .navItem.activeNavItem .navLink::after {
+  left: -29% !important;
+}
+
+.sidebar.sidebarActive .sidebarMenu {
+  padding: 0px 20px 0px 20px;
+}
+
+.sidebar.sidebarActive:hover .navItem.activeNavItem .navLink::after {
+  left: -9% !important;
+}
+
+.sidebar .sidebarMenu {
+  /* height: calc(100vh - 80px); */
+  list-style: none;
+  position: relative;
+  padding: 0px 0px 0px 20px;
+  margin-top: 10px;
+}
+
+.sidebar .sidebarLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar .sidebarLogo .logoSmall {
+  display: none;
+}
+
+.sidebar .navItem {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 5px 10px 5px 0px;
+}
+
+.sidebar .navItem .navSubItem {
+  padding: 5px 51px;
+  position: relative;
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.sidebar .navItem .navSubItemOpen {
+    display: block;
+    transition: all 0.5s ease;
+}
+
+.sidebar .navItem .arrrow_sub_nav {
+    transition: all 0.3s ease;
+    transform: rotate(90deg);
+}
+
+.sidebar .navItemOpen .arrrow_sub_nav {
+    transform: rotate(180deg);
+}
+
+.sidebar .navItem .navSubItem li {
+  padding: 10px 0px;
+}
+
+.sidebar .navItem .navSubItem li a {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.sidebar > ul > li ul:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 17px;
+  width: 1px;
+  height: calc(100% - 50px);
+  background-color: #e0e9f4;
+}
+
+.sidebar > ul > li ul > li::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -34px;
+  width: 28px;
+  height: 27px;
+  border-bottom: 1px solid #e0e9f4;
+  border-left: 1px solid #e0e9f4;
+  border-color: #e0e9f4 !important;
+  color: #e0e9f4 !important;
+  border-radius: 0 0 0 20px;
+}
+
+.sidebar .navLink {
+  color: #3a3a3a;
+  display: block;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.sidebar .navItem.activeNavItem .navLink {
+  color: #0968e5;
+  background-color: #D1DBFE;
+}
+
+.sidebar .navItem.activeNavItem .navLink::after {
+  /* content: '';
+    display: block;
+    width: 8px;
+    height: 33px;
+    border-radius: 20px;
+    background: #0077FE;
+    position: absolute; */
+  /* top: 0; */
+  /* left: -13%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+.sidebar .navLink .icon {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  margin-left: 5px;
+}
+
+.sidebar .navLink .icon .itemIcon {
+  color: white;
+  height: 20px;
+  width: 20px;
+}
+
+.sidebar .navLink:hover {
+  color: #0968e5;
+  background-color: #D1DBFE;
+}
+
+.sidebar #navLinkSidebar:hover .itemIcon {
+  color: #0968e5;
+  background-color: #D1DBFE;
+}
+
+.sidebar .icon .itemIcon {
+  background: #3a3a3a;
+}
+
+.sidebar .navLink .icons {
+  background: black;
+}
+
+.sidebar .navLink .icons i {
+  background: #3a3a3a;
+}
+
+.sidebar .navItem.activeNavItem .navLink .icon i {
+  background: #0968e5;
+}
+
+@media screen and (max-width: 1439px) {
+  .sidebar {
+    width: 96px;
+  }
+
+  .sidebar .sidebarMenu {
+    padding: 0px 20px 0px 25px;
+  }
+
+  .sidebar .navLink .titleSidebar {
+    display: none;
+  }
+
+  .sidebar .sidebarLogo .logoXl {
+    display: none;
+  }
+
+  .sidebar .sidebarLogo .logoSmall {
+    display: block;
+  }
+
+  .sidebar .sectionCard {
+    display: none;
+  }
+
+  .sidebarActive {
+    width: 283px !important;
+  }
+
+  .sidebarActive > .sectionCard {
+    display: block !important;
+  }
+
+  .sidebarActive > .sidebarLogo .logoXl {
+    display: block !important;
+  }
+
+  .sidebarActive > .sidebarLogo .logoSmall {
+    display: none !important;
+  }
+
+  .sidebarActive .navItem .navLink .titleSidebar {
+    display: block !important;
+  }
+
+  .sidebar .navItem.activeNavItem .navLink::after {
+    left: -39%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .sidebar {
+    width: 0px;
+  }
+}
+
+.accordition {
+  --bs-accordion-bg: transparent !important;
+  --bs-accordion-border-color: transparent !important;
+  --bs-accordion-border-width: 0px !important;
+  --bs-accordion-border-radius: 0px !important;
+  --bs-accordion-inner-border-radius: 0px !important;
+  --bs-accordion-btn-padding-x: 0px !important;
+  --bs-accordion-btn-padding-y: 0px !important;
+  --bs-accordion-btn-color: transparent !important;
+  --bs-accordion-btn-bg: transparent !important;
+  --bs-accordion-active-color: transparent !important;
+  --bs-accordion-active-bg: transparent !important;
+  --bs-accordion-btn-focus-box-shadow: none !important;
+  --bs-accordion-btn-icon: url(../../../public/assets/icons/arrow-down.svg) !important;
+  --bs-accordion-btn-active-icon: url(../../../public/assets/icons/arrow-down.svg) !important;
+}
+
+.accordionBody {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}

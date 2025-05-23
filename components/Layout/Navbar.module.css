@@ -1,0 +1,21 @@
+.navbar {
+    /* max-height: 30px; */
+    /* padding: 20px 40px 0px 40px; */
+    /* background: #FAF9FC; */
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.05); */
+}
+
+.navbar .navbarItemRight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .navbarItemRight .navItem {
+    list-style: none;
+    min-height: 30px !important;
+} 
+
+.navbar .navItem .navLink{
+    min-height: 70px !important;
+} 

@@ -1,0 +1,24 @@
+  .dropdown_v1-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown_v1 {
+    visibility: visible;
+    position: absolute;
+    /* Position the tooltip above the text */
+    transform: translateX(-75%);
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1;
+
+    /* Optional: Add transition for fade-in effect */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .dropdown_v1-container:hover .dropdown_v1 {
+    opacity: 1;
+  }

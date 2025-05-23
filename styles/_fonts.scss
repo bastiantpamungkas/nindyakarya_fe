@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    src: url('../../public/assets/fonts/monserat/Montserrat-Light.ttf');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    src: url('../../public/assets/fonts/monserat/Montserrat-Regular.ttf');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    src: url('../../public/assets/fonts/monserat/Montserrat-Medium.ttf');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    src: url('../../public/assets/fonts/monserat/Montserrat-SemiBold.ttf');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    src: url('../../public/assets/fonts/monserat/Montserrat-Bold.ttf');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    src: url('../../public/assets/fonts/monserat/Montserrat-ExtraBold.ttf');
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'iconsax';
+    src:  url('../../public/assets/fonts/iconsax.eot?yjegnn');
+    src:  url('../../public/assets/fonts/iconsax.eot?yjegnn#iefix') format('embedded-opentype'),
+      url('../../public/assets/fonts/iconsax.ttf?yjegnn') format('truetype'),
+      url('../../public/assets/fonts/iconsax.woff?yjegnn') format('woff'),
+      url('../../public/assets/fonts/iconsax.svg?yjegnn#iconsax') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
